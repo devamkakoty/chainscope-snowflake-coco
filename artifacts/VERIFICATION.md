@@ -49,10 +49,12 @@ source records. Revenue exposure is 6,705,000 integer USD cents.
 
 ## Boundaries
 
-No packages were installed. No account was created. Nothing was published or
-submitted. Snowflake, Cortex Analyst and CoCo account-side execution remain
-unperformed. Native semantic SQL was checked against official documentation,
-but has not been compiled in a Snowflake account. Local tests do not prove it.
+No packages were installed and no Snowflake account was created. The repository,
+GitHub Pages replay, release assets and both Hack2Skill submission modules were
+published/submitted on October 4, 2026. Snowflake, Cortex Analyst and CoCo
+account-side execution remain unperformed. Native semantic SQL was checked
+against official documentation, but has not been compiled in a Snowflake
+account. Local tests and the static replay do not prove account-side execution.
 
 The local and static preview servers remain bound to loopback:
 - Local application: `http://127.0.0.1:8766`, PID 20192.

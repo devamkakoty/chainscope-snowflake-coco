@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-10-04T16:35:26.942671+00:00",
+  "generated_at_utc": "2026-10-04T18:08:48.616324+00:00",
   "source": "Local SQLite synthetic snapshot; scripts/build_static.py",
   "command": "python scripts/build_static.py",
   "usage": "Public synthetic replay only. No credentials, authentication or live backend.",
   "schema_version": 1,
   "license": "CC0-1.0 for fixture data; MIT for project code",
-  "fixture_sha256": "77327e2c9e4510a34f6bd32c86193a8bffdeeba6de22b2c4aa7f8a625d90e4f3",
-  "fixture_bytes": 331760,
+  "fixture_sha256": "050d5e94bda0337f8314f56a8d3fd8a5fafa9ea8acfc649ea2054af635e4fc62",
+  "fixture_bytes": 331759,
   "metric_count": 7,
   "source_records_per_role": 163
 }

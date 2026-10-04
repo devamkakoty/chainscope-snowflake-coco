@@ -34,7 +34,12 @@ def build():
                     record = get_record(db, table, row["id"], role)
                     data["records"][role][record["source"]["href"]] = record
     fixture = within_project(assets / "demo-data.js")
-    fixture.write_text("window.CHAINSCOPE_DATA=" + json.dumps(data, separators=(",", ":")) + ";\n", encoding="utf-8")
+    # Write exact UTF-8/LF bytes so the manifest hashes the same payload that
+    # GitHub Pages serves, regardless of the checkout's core.autocrlf setting.
+    fixture.write_bytes(
+        ("window.CHAINSCOPE_DATA=" + json.dumps(data, separators=(",", ":")) + ";\n")
+        .encode("utf-8")
+    )
     for name in ["style.css", "icons.svg", "replay.js", "LUCIDE-LICENSE", "icons-manifest.json"]:
         shutil.copyfile(ROOT / "static" / name, within_project(assets / name))
     js = (ROOT / "static" / "app.js").read_text(encoding="utf-8")
@@ -59,7 +64,9 @@ def build():
         "fixture_bytes": fixture.stat().st_size, "metric_count": len(CATALOG),
         "source_records_per_role": len(data["records"]["operations"]),
     }
-    (destination / "static-manifest.json").write_text(json.dumps(manifest, indent=2)+"\n", encoding="utf-8")
+    (destination / "static-manifest.json").write_bytes(
+        (json.dumps(manifest, indent=2) + "\n").encode("utf-8")
+    )
     print(json.dumps({"destination": str(destination), "fixture_bytes": fixture.stat().st_size,
                       "metrics": len(CATALOG), "source_records_per_role": manifest["source_records_per_role"]}, indent=2))
 

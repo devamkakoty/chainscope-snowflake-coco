@@ -52,7 +52,10 @@ class StaticPackageTests(unittest.TestCase):
 
     def test_manifest_matches_generated_fixture(self):
         manifest = json.loads((self.root / "static-manifest.json").read_text())
-        self.assertEqual(manifest["fixture_sha256"], hashlib.sha256(self.fixture_path.read_bytes()).hexdigest())
+        fixture_bytes = self.fixture_path.read_bytes()
+        self.assertNotIn(b"\r\n", fixture_bytes)
+        self.assertEqual(manifest["fixture_bytes"], len(fixture_bytes))
+        self.assertEqual(manifest["fixture_sha256"], hashlib.sha256(fixture_bytes).hexdigest())
 
     def test_operation_record_projection_has_no_prices(self):
         record = self.fixture["records"]["operations"]["/api/records/order_lines/LIN-025"]

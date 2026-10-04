@@ -113,9 +113,9 @@ No warehouse creation, installation, publishing or account creation is automated
 
 ## GitHub Pages and Screenshots
 
-**Ready-to-host static demo:** `docs/index.html`, with all assets beneath
-`docs/static/`. Use the repository's `/docs` folder as the Pages source after
-owner-authorized publication. Nothing has been uploaded or published.
+**Published static demo:** `docs/index.html`, with all assets beneath
+`docs/static/`, is served from the repository's `/docs` folder at
+`https://devamkakoty.github.io/chainscope-snowflake-coco/`.
 
 ```powershell
 python -B scripts/build_static.py
@@ -155,4 +155,6 @@ Submission copy: [SUBMISSION.md](SUBMISSION.md).
 Verification: [artifacts/VERIFICATION.md](artifacts/VERIFICATION.md).
 Hackathon deck: [artifacts/ChainScope-CoCo-Hackathon-Deck.pdf](artifacts/ChainScope-CoCo-Hackathon-Deck.pdf).
 Narrated demo: see the `v1.0-hackathon` GitHub release.
+Hack2Skill received both the GitHub/deployed-link and Prototype/MVP submissions
+on October 4, 2026. Submission is not an award or proof of account-side execution.
 Project code: MIT. Generated data: CC0-1.0. Lucide asset notices are retained.
