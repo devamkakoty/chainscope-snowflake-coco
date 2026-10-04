@@ -1,0 +1,14 @@
+{
+  "semantic_view": "CHAINSCOPE_DEMO.CORE.CHAINSCOPE_OPERATIONS",
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Which customer orders are at risk? Include order IDs and use the fixed snapshot."
+        }
+      ]
+    }
+  ]
+}

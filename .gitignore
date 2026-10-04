@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+data/*.sqlite3*
+artifacts/browser-profile/
+artifacts/tmp/
+artifacts/server*.log
+artifacts/chainscope-submission.zip
+artifacts/screenshots/failure.png
+.venv/
+.env
+connections.toml

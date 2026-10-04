@@ -1,0 +1,9 @@
+id,name,category
+PRT-001,Control module,Electronics
+PRT-002,Pressure sensor,Electronics
+PRT-003,Drive assembly,Mechanical
+PRT-004,Valve body,Mechanical
+PRT-005,Cooling fan,Thermal
+PRT-006,Power board,Electronics
+PRT-007,Seal kit,Consumables
+PRT-008,Steel housing,Mechanical

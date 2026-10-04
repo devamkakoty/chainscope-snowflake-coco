@@ -1,0 +1,62 @@
+{
+  "source": "Algorithmic synthetic scenario; scripts/generate_data.py",
+  "generated_at_utc": "2026-10-04T16:35:16.447157+00:00",
+  "as_of": "2026-10-04",
+  "seed": 20261004,
+  "schema_version": 1,
+  "usage": "Synthetic demonstration only. Fictional entities; no real client or personal data.",
+  "license": "CC0-1.0 for generated scenario data",
+  "command": "python scripts/generate_data.py",
+  "files": {
+    "snapshot.csv": {
+      "rows": 1,
+      "sha256": "ce597e62b7b4e719c7f78468f042dd5b3245103dc03d3c3bbe8fe1c5520cf664"
+    },
+    "suppliers.csv": {
+      "rows": 6,
+      "sha256": "9f44c9704acddd9363883681dc3bc9ceff8441ee11b4c1bc32ee9f057b198b65"
+    },
+    "parts.csv": {
+      "rows": 8,
+      "sha256": "a2c82a982d4f1f33eff13f7cb6dbaa2493d7327b62bbaa8c9e308b99967b3797"
+    },
+    "plants.csv": {
+      "rows": 3,
+      "sha256": "e6eb35e1a6d030e66523873d8fd42809f9eef6090d7ea90fd8e36e50892d0ef3"
+    },
+    "customers.csv": {
+      "rows": 6,
+      "sha256": "b38f2233bf4b34dffc521ef139141ed852741c389dd82b94180b01b5fac7d69b"
+    },
+    "sourcing.csv": {
+      "rows": 13,
+      "sha256": "dde4d6b764c6a4d95936ffcf54a68c3fccf2545ce4920aab7f10bcd76f9fc0a7"
+    },
+    "inventory.csv": {
+      "rows": 24,
+      "sha256": "5cce7e0c51f92ce187ba6cf4084b87f29ef667791f65bdf39c400707f7c81295"
+    },
+    "shipments.csv": {
+      "rows": 32,
+      "sha256": "60d87c65a35e7517477f6842194b8db5dec49448186885654d62b2e54484675d"
+    },
+    "orders.csv": {
+      "rows": 14,
+      "sha256": "ff1cd2d8027618aad3bd574cac820a513c3b54a39d59ac684ea28d606b128a72"
+    },
+    "order_lines.csv": {
+      "rows": 28,
+      "sha256": "a0027b72bb7c12fdb8eab4a02d6f26fb2cf8edb50dd88473240f385afd7cfe99"
+    },
+    "allocations.csv": {
+      "rows": 28,
+      "sha256": "827b67605c32be278ef1dd2fc9458e2d54ea98f2390d3df6314bb609eae494b5"
+    },
+    "snowflake_seed.sql": {
+      "sha256": "9793ba6796011d281b34013093807d31f52eb7d60d3c83e809ea77fc8fdab265"
+    },
+    "chainscope.sqlite3": {
+      "sha256": "49e965350a8ad5d952db642aedb9e8f22f51fcf6b552156fb9b1a08d456012e8"
+    }
+  }
+}
