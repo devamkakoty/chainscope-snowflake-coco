@@ -1,0 +1,23 @@
+ChainScope is a governed supply-chain analytics prototype for problem statement five of the Snowflake CoCo CLI Hackathon.
+
+The business problem is simple to state but difficult to answer reliably. A late inbound shipment matters only when it threatens a specific customer commitment. In many companies, supplier performance, plant inventory, shipment status, customer orders, and financial exposure live in separate dashboards. A free-form assistant can sound convincing while mixing metric definitions, guessing joins, or exposing information to the wrong role.
+
+ChainScope connects suppliers, parts, plants, shipments, orders, and customers through an explicit ontology. The synthetic snapshot contains one hundred and sixty-three records across eleven tables. It includes thirty-two shipments and fourteen customer orders. Every company, relationship, and amount shown here is synthetic.
+
+The workflow begins when a user asks one of seven governed business questions. Here, the user asks which customer orders are at risk. Before any calculation, ChainScope resolves the question against an approved metric contract and checks the simulated user role. It then runs shared deterministic SQL at a defined grain. The result is four at-risk orders.
+
+The answer is not just a number. It includes the metric definition, the approved calculation, and inspectable source records. Order thirteen can be traced through its outstanding line, explicit allocation, overdue inbound shipment, required part, plant, supplier, and customer. This prevents an accidental many-to-many join from inflating risk or revenue.
+
+The supply-network view makes those relationships visible. Selecting a customer commitment highlights its real allocation path through the network. The application does not infer a relationship merely because two records share a part or location. That distinction is important for operational decisions and for auditability.
+
+Governance is applied before a query runs. An operations analyst can inspect shipment and inventory evidence, but a request for financial exposure is denied. A commercial analyst can ask the same approved question and see sixty-seven thousand and fifty US dollars of gross open-order exposure. This is outstanding value on at-risk lines. It is not recognized revenue, predicted loss, or a claimed client result.
+
+Unsupported forecasting and prompt-injection requests are refused. Allowed, denied, and refused decisions are written to a session audit chain. Source-level price fields are also redacted from operations users. The role selector in this demonstration is not authentication; production identity must come from a trusted provider.
+
+The project includes a local web application, a command-line interface, a reproducible data generator, and a public static replay for evaluation without credentials. It also includes Snowflake setup and load SQL, shared calculation views, native Semantic Views, least-privilege operations and commercial grants, validation queries, a Cortex Analyst request, and three CoCo CLI review prompts.
+
+The local implementation has fifty-six passing automated tests. Separate local and static browser runs each passed twenty-nine checks, covering the seven answers, source drawers, role boundaries, audit behavior, responsive layouts, and the interactive ontology. The browser checks made no external runtime requests.
+
+The current limitation is explicit. Snowflake account compilation, Cortex Analyst execution, and the supplied CoCo CLI workflow have not been completed because no compatible Snowflake connection is available in this environment. The repository therefore does not claim a Snowflake query result or a successful CoCo execution. Instead, it provides the complete account deployment path and validation checklist for the next authorized step.
+
+ChainScope demonstrates a reusable pattern: define business meaning once, enforce access before execution, and make every conversational answer traceable to approved calculations and source evidence. The public repository contains the runnable application, tests, architecture, Snowflake assets, screenshots, and deployment documentation.

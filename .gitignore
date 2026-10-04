@@ -6,6 +6,9 @@ artifacts/tmp/
 artifacts/server*.log
 artifacts/chainscope-submission.zip
 artifacts/screenshots/failure.png
+artifacts/*.wav
+artifacts/*.mp4
+artifacts/*.concat.txt
 .venv/
 .env
 connections.toml
