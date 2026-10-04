@@ -153,4 +153,6 @@ path without making a hackathon demo depend on account access."
 
 Submission copy: [SUBMISSION.md](SUBMISSION.md).
 Verification: [artifacts/VERIFICATION.md](artifacts/VERIFICATION.md).
+Hackathon deck: [artifacts/ChainScope-CoCo-Hackathon-Deck.pdf](artifacts/ChainScope-CoCo-Hackathon-Deck.pdf).
+Narrated demo: see the `v1.0-hackathon` GitHub release.
 Project code: MIT. Generated data: CC0-1.0. Lucide asset notices are retained.
